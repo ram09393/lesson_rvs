@@ -9,6 +9,8 @@ LOGIN_SUCCESSFUL_USER = "api/login"
 
 json_file = open('/Users/ramisk/PYprojects/lesson_rvs/core/new_users_data.json')
 users_data = json.load(json_file)
+json_file = open('/Users/ramisk/PYprojects/lesson_rvs/core/user_login_data.json')
+users_login = json.load(json_file)
 
 @pytest.mark.parametrize('users_data' , users_data)
 def test_successful_register(users_data):
